@@ -188,7 +188,7 @@ function drawCanvasButtons()
   fill(0,0,0);
   rect(x+100,y+50,5,500);
   
-  if (mouseX > 110 && mouseX < 115 && mouseY > 65 && mouseY < 490 && mouseIsPressed == true)
+  if (mouseX > 110 && mouseX < 115 && mouseY > 65 && mouseY < 210 && mouseIsPressed == true)
   {
     stateOfCircleOne = 2;
   }
@@ -196,23 +196,17 @@ function drawCanvasButtons()
   fill(0,0,0);
   rect(x+200,y+50,5,500);
   
-  if (mouseX > 210 && mouseX < 215 && mouseY > 65 && mouseY < 490 && mouseIsPressed == true)
+  if (mouseX > 210 && mouseX < 215 && mouseY > 220 && mouseY < 360 && mouseIsPressed == true)
   {
-    if (soundre.isPlaying() == false)
-    {
-      soundre.play();
-    }
+    stateOfCircleTwo = 2;
   }
   
   fill(0,0,0);
   rect(x+300,y+50,5,500);
   
-  if (mouseX > 310 && mouseX < 315 && mouseY > 65 && mouseY < 490 && mouseIsPressed == true)
+  if (mouseX > 310 && mouseX < 315 && mouseY > 375 && mouseY < 490 && mouseIsPressed == true)
   {
-    if (soundmi.isPlaying() == false)
-    {
-      soundmi.play();
-    }
+    stateOfCircleThree = 3;
   }
   
   fill(0,0,0);
