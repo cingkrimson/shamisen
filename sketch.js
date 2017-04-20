@@ -196,7 +196,7 @@ function drawCanvasButtons()
   fill(0,0,0);
   rect(x+200,y+50,5,500);
   
-  if (mouseX > 210 && mouseX < 215 && mouseY > 220 && mouseY < 360 && mouseIsPressed == true)
+  if (mouseX > 110 && mouseX < 115 && mouseY > 220 && mouseY < 360 && mouseIsPressed == true)
   {
     stateOfCircleTwo = 2;
   }
@@ -204,9 +204,9 @@ function drawCanvasButtons()
   fill(0,0,0);
   rect(x+300,y+50,5,500);
   
-  if (mouseX > 310 && mouseX < 315 && mouseY > 375 && mouseY < 490 && mouseIsPressed == true)
+  if (mouseX > 110 && mouseX < 115 && mouseY > 375 && mouseY < 490 && mouseIsPressed == true)
   {
-    stateOfCircleThree = 3;
+    stateOfCircleThree = 2;
   }
   
   fill(0,0,0);
@@ -241,6 +241,19 @@ function drawCanvasButtons()
       soundla.play();
     }
   }
+
+  fill(0,0,0);
+  rect(x+620,y+200,50,50);
+  fill(255,0,0);
+  text("Reset",640,240);
+
+  //if (mouseX > 630 && mouseX < 680 && mouseY > 210 && mouseY < 260 && mouseIsPressed == true)
+  //{
+    //stateOfCircleOne = 1;
+  //}
+//}
+
+
   
   fill(0,0,0);
   rect(x+100,y+50,500,5);
