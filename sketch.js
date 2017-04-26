@@ -184,6 +184,90 @@ function drawCanvasButtons()
     fill(0,0,0);
     ellipse(moveCircleThreeX,moveCircleThreeY,50,50); 
   }
+
+   if (stateOfCircleOne == 4)
+  {
+    moveCircleOneX = 50;
+    moveCircleOneY = 130;
+    fill(0,0,0);
+    ellipse(moveCircleOneX,moveCircleOneY,50,50);
+  }
+  else if (stateOfCircleOne == 5)
+  {
+    fill(0,0,0);
+    ellipse(moveCircleOneX,moveCircleOneY,50,50);
+
+    moveCircleOneX = moveCircleOneX + 162;
+
+    if (moveCircleOneX > 212)
+    {
+      moveCircleOneX = 212;
+      stateOfCircleOne = 6;
+    }
+  }
+  else if (stateOfCircleOne == 6)
+  {
+    moveCircleOneX = 212;
+    moveCircleOneY = 130;
+    fill(0,0,0);
+    ellipse(moveCircleOneX,moveCircleOneY,50,50); 
+  }
+  
+  if (stateOfCircleTwo == 4)
+  {
+    moveCircleTwoX = 50;
+    moveCircleTwoY = 280;
+    fill(0,0,0);
+    ellipse(moveCircleTwoX,moveCircleTwoY,50,50);
+  }
+  else if (stateOfCircleTwo == 5)
+  {
+    fill(0,0,0);
+    ellipse(moveCircleTwoX,moveCircleTwoY,50,50);
+
+    moveCircleTwoX = moveCircleTwoX + 162;
+
+    if (moveCircleTwoX > 212)
+    {
+      moveCircleTwoX = 212;
+      stateOfCircleTwo = 6;
+    }
+  }
+  else if (stateOfCircleTwo == 6)
+  {
+    moveCircleTwoX = 212;
+    moveCircleTwoY = 280;
+    fill(0,0,0);
+    ellipse(moveCircleTwoX,moveCircleTwoY,50,50); 
+  }
+  
+  if (stateOfCircleThree == 4)
+  {
+    moveCircleThreeX = 50;
+    moveCircleThreeY = 430;
+    fill(0,0,0);
+    ellipse(moveCircleThreeX,moveCircleThreeY,50,50);
+  }
+  else if (stateOfCircleThree == 5)
+  {
+    fill(0,0,0);
+    ellipse(moveCircleThreeX,moveCircleThreeY,50,50);
+
+    moveCircleThreeX = moveCircleThreeX + 162;
+
+    if (moveCircleThreeX > 212)
+    {
+      moveCircleThreeX = 212;
+      stateOfCircleThree = 6;
+    }
+  }
+  else if (stateOfCircleThree == 6)
+  {
+    moveCircleThreeX = 212;
+    moveCircleThreeY = 430;
+    fill(0,0,0);
+    ellipse(moveCircleThreeX,moveCircleThreeY,50,50); 
+  }
   
   fill(0,0,0);
   rect(x+100,y+50,5,500);
@@ -193,67 +277,45 @@ function drawCanvasButtons()
     stateOfCircleOne = 2;
   }
 
-  fill(0,0,0);
-  rect(x+200,y+50,5,500);
-  
   if (mouseX > 110 && mouseX < 115 && mouseY > 220 && mouseY < 360 && mouseIsPressed == true)
   {
     stateOfCircleTwo = 2;
+  }
+
+  if (mouseX > 110 && mouseX < 115 && mouseY > 375 && mouseY < 490 && mouseIsPressed == true)
+  {
+    stateOfCircleThree = 2;
+  }
+
+  fill(0,0,0);
+  rect(x+200,y+50,5,500);
+
+  if (mouseX > 210 && mouseX < 215 && mouseY > 65 && mouseY < 210 && mouseIsPressed == true)
+  {
+    stateOfCircleOne = 5;
+  }
+
+  if (mouseX > 210 && mouseX < 215 && mouseY > 220 && mouseY < 360 && mouseIsPressed == true)
+  {
+    stateOfCircleTwo = 5;
+  }
+
+  if (mouseX > 210 && mouseX < 215 && mouseY > 375 && mouseY < 490 && mouseIsPressed == true)
+  {
+    stateOfCircleThree = 5;
   }
   
   fill(0,0,0);
   rect(x+300,y+50,5,500);
   
-  if (mouseX > 110 && mouseX < 115 && mouseY > 375 && mouseY < 490 && mouseIsPressed == true)
-  {
-    stateOfCircleThree = 2;
-  }
-  
   fill(0,0,0);
   rect(x+400,y+50,5,500);
-  
-  if (mouseX > 410 && mouseX < 415 && mouseY > 65 && mouseY < 490 && mouseIsPressed == true)
-  {
-    if (soundfa.isPlaying() == false)
-    {
-      soundfa.play();
-    }
-  }
   
   fill(0,0,0);
   rect(x+500,y+50,5,500);
   
-  if (mouseX > 510 && mouseX < 515 && mouseY > 65 && mouseY < 490 && mouseIsPressed == true)
-  {
-    if (soundso.isPlaying() == false)
-    {
-      soundso.play();
-    }
-  }
-  
   fill(0,0,0);
   rect(x+600,y+50,5,500);
-  
-  if (mouseX > 610 && mouseX < 615 && mouseY > 65 && mouseY < 490 && mouseIsPressed == true)
-  {
-    if (soundla.isPlaying() == false)
-    {
-      soundla.play();
-    }
-  }
-
-  fill(0,0,0);
-  rect(x+620,y+200,50,50);
-  fill(255,0,0);
-  text("Reset",640,240);
-
-  //if (mouseX > 630 && mouseX < 680 && mouseY > 210 && mouseY < 260 && mouseIsPressed == true)
-  //{
-    //stateOfCircleOne = 1;
-  //}
-//}
-
-
   
   fill(0,0,0);
   rect(x+100,y+50,500,5);
